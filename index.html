@@ -5,107 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bridging Language & Trust | Interpreter NYC</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <nav class="container">
+    <div class="container">
+        <header>
             <div class="logo">А<span>|</span>Я</div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Join Our Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#firms">Law Firms</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#join">Join Team</a></li>
             </ul>
-        </nav>
-    </header>
+        </header>
 
-    <section class="hero container">
-        <div class="hero-content">
-            <h1>Bridging Language & Trust</h1>
-            <p class="subtitle">Expert Interpreting for Asylum & Immigration</p>
-            <div class="hero-btns">
-                <a href="#" class="btn btn-outline">For Law Firms</a>
-                <a href="#" class="btn btn-dark">For Applicants</a>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Bridging Language & Trust</h1>
+                <p class="subtitle">Professional Interpretation for Immigration & Legal Matters</p>
+                <p>We partner with law firms as an extension of their practice and assist individuals with professional, calm, and reliable language support.</p>
+                <div class="hero-btns">
+                    <a href="#firms" class="btn btn-outline">For Law Firms</a>
+                    <a href="#clients" class="btn btn-dark">For Clients</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="123.jpg" alt="NYC Skyline">
-        </div>
-    </section>
+            <div class="hero-image">
+                <img src="statue.jpg" alt="NYC Skyline">
+            </div>
+        </section>
 
-    <div class="social-bar container">
-        <p><i class="fab fa-twitter"></i> @InterpreterNYC</p>
+        <div class="social-bar">
+            @interpreternyc
+        </div>
+
+        <section class="services">
+            <div id="firms" class="service-card">
+                <h3>For Law Firms</h3>
+                <p><strong>An Extension of Your Practice</strong></p>
+                <p>We work in coordination with counsel to ensure language never interferes with representation.</p>
+                <ul>
+                    <li>Live interpretation for asylum interviews</li>
+                    <li>Case terminology review</li>
+                    <li>Certified document translations</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+
+            <div id="clients" class="service-card">
+                <h3>For Clients</h3>
+                <p><strong>Professional Support</strong></p>
+                <p>Immigration interviews are recorded. Words matter. We provide steady, accurate communication.</p>
+                <ul>
+                    <li>Interview interpretation</li>
+                    <li>Guided preparation sessions</li>
+                    <li>Clear communication under pressure</li>
+                </ul>
+                <a href="#contact" class="btn btn-dark">Request Interpreter</a>
+            </div>
+
+            <div id="join" class="service-card">
+                <h3>Join Our Network</h3>
+                <p><strong>Interpreters Wanted</strong></p>
+                <p>We welcome qualified bilingual professionals who are serious about accuracy and confidentiality.</p>
+                <ul>
+                    <li>Language proficiency evaluation</li>
+                    <li>Legal terminology assessment</li>
+                    <li>NYC Court certification pathways</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Apply Now</a>
+            </div>
+        </section>
+
+        <section id="contact" class="info-contact">
+            <div class="why-choose">
+                <h3>Why Choose Us</h3>
+                <ul>
+                    <li><strong>Accurate:</strong> Precise interpretation.</li>
+                    <li><strong>Confidential:</strong> Professional standards.</li>
+                    <li><strong>Trusted by Counsel:</strong> Focused on legal settings.</li>
+                </ul>
+                <p><strong>Languages We Cover:</strong><br>
+                Russian · Georgian · Azeri · Ukrainian (Expanding)</p>
+            </div>
+            <div class="contact-form">
+                <h3>Get In Touch</h3>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone">
+                    <button type="submit" class="btn btn-dark">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <strong>Accurate. Confidential. Trusted by Counsel.</strong>
+            </div>
+            <div>
+                interpretersofnyc@gmail.com<br>
+                917 699 0190 | @interpreternyc
+            </div>
+        </footer>
     </div>
 
-    <section class="services container">
-        <div class="service-card">
-            <h3>For Law Firms</h3>
-            <p class="role">Partner in Immigration Cases</p>
-            <p>We assist law firms as specialized multilingual interpretation service for asylum interviews in Russian, Georgian, Azeri and Ukrainian.</p>
-            <ul>
-                <li>Access Reliable Interpreters</li>
-                <li>Case Prep Support</li>
-                <li>Reliable Interpreter Pool</li>
-            </ul>
-            <a href="#" class="btn btn-outline">Learn More</a>
-        </div>
-
-        <div class="service-card">
-            <h3>For Applicants</h3>
-            <p class="role">Interpreter Support for Interviews</p>
-            <p>We help arrive interpretive sessions for your interviews, Asylum seekers in Russian, Georgian, Azeri, and Ukrainian, relating stress, and build confidence.</p>
-            <ul>
-                <li>Request an Interpreter</li>
-                <li>Guided Interview Preparation</li>
-                <li>Stress-Free Interview Day</li>
-            </ul>
-            <a href="#" class="btn btn-dark">Request Interpreter</a>
-        </div>
-
-        <div class="service-card highlight">
-            <h3>Join the Interpreter Network</h3>
-            <p class="role">Professional Interpreters Wanted</p>
-            <p>Experienced interpreters to apply and grow within our vetted network for New York. You gain from selective vetting, on-going training, and opportunities.</p>
-            <a href="#" class="btn btn-outline">Apply Now</a>
-        </div>
-    </section>
-
-    <section class="info-contact container">
-        <div class="why-choose">
-            <h3>Why Choose Us?</h3>
-            <ul>
-                <li>Proven Expertise</li>
-                <li>Confidential</li>
-                <li>Reliable</li>
-            </ul>
-        </div>
-        <div class="contact-form">
-            <h3>Get In Touch</h3>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone">
-                <button type="submit" class="btn btn-dark">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="container">
-        <div class="footer-languages">
-            <strong>Languages We Cover:</strong><br>
-            Russian, Georgian, Azeri, Ukrainian (growing)
-        </div>
-        <div class="footer-socials">
-            Follow Us: 
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </footer>
-
 </body>
-
 </html>
-

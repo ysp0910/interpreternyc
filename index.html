@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Georgia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
 
     <style>
         html { scroll-behavior: smooth; }
@@ -16,15 +16,15 @@
             font-family: 'Georgia', serif;
             background-color: #fff;
             margin: 0;
-            padding: 40px; /* Увеличил отступы сверху и снизу */
+            padding: 20px 5%; 
             color: #000;
             line-height: 1.5;
         }
 
-        /* УВЕЛИЧЕННЫЙ КОНТЕЙНЕР ДЛЯ ШИРИНЫ */
         .container { 
-            max-width: 1400px; 
+            max-width: 1600px; 
             margin: 0 auto; 
+            width: 100%; 
         }
 
         header { 
@@ -34,19 +34,19 @@
             margin-bottom: 50px; 
         }
         
-        .logo { font-size: 48px; font-weight: bold; }
+        .logo { font-size: 50px; font-weight: bold; font-family: 'Georgia', serif; }
         
         .nav-links { list-style: none; display: flex; gap: 40px; padding: 0; margin: 0; }
-        .nav-links a { text-decoration: none; color: #000; font-weight: bold; font-size: 20px; }
+        .nav-links a { text-decoration: none; color: #000; font-weight: bold; font-size: 22px; }
 
-        /* ЗАГОЛОВКИ С ЭФФЕКТОМ ЗУМА */
+        /* ЗАГОЛОВКИ ШРИФТОМ KALAM */
         h1, h2, h3 { 
-            font-family: 'Marck Script', cursive !important; 
+            font-family: 'Kalam', cursive !important; 
             margin: 0; 
-            font-weight: 400;
+            font-weight: 700; 
         }
         h1 { font-size: 85px; line-height: 1.1; color: #1a1a1a; }
-        h3 { font-size: 46px; margin-bottom: 15px; }
+        h3 { font-size: 44px; margin-bottom: 15px; }
 
         .hero { 
             display: flex; 
@@ -57,61 +57,64 @@
         .hero-content { flex: 1.2; }
         .hero-image { flex: 1; }
         
-        .subtitle { font-size: 28px; margin: 20px 0; font-style: italic; color: #444; }
-        .hero-content p { font-size: 22px; }
+        .subtitle { 
+            font-size: 30px; 
+            margin: 20px 0; 
+            font-style: italic; 
+            color: #333; 
+            font-family: 'Georgia', serif; 
+        }
+        .hero-content p { font-size: 24px; }
 
         .hero-image img { 
             width: 100%; 
-            height: 550px; /* Крупная высокая картинка */
+            height: 600px; 
             object-fit: cover; 
-            border-radius: 4px; 
+            border-radius: 5px; 
         }
 
-        /* СЕТКА УСЛУГ ШИРЕ */
         .services { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
             gap: 40px; 
             margin-bottom: 80px; 
         }
-        .service-card { padding: 30px; border: 2px solid transparent; }
-        .service-card p { font-size: 18px; }
-        .service-card:hover { border: 2px solid #000; box-shadow: 10px 10px 0px #000; }
+        .service-card { padding: 30px; border: 2px solid transparent; transition: 0.3s; }
+        .service-card p { font-size: 20px; }
+        .service-card:hover { border: 2px solid #000; box-shadow: 12px 12px 0px #000; }
 
         .btn {
-            padding: 15px 35px;
+            padding: 18px 40px;
             border: 3px solid #000;
             text-decoration: none;
             color: #000;
             background: #fff;
             font-weight: bold;
-            box-shadow: 6px 6px 0px #000;
+            box-shadow: 8px 8px 0px #000;
             display: inline-block;
             cursor: pointer;
             font-family: 'Georgia', serif;
-            font-size: 18px;
+            font-size: 20px;
             transition: 0.2s;
         }
-        .btn:hover { background: #000; color: #fff; box-shadow: none; transform: translate(3px, 3px); }
+        .btn:hover { background: #000; color: #fff; box-shadow: none; transform: translate(4px, 4px); }
 
-        /* КОНТАКТЫ */
         .info-contact { 
             display: grid; 
             grid-template-columns: 1fr 1fr; 
-            gap: 80px; 
+            gap: 100px; 
             margin-bottom: 60px; 
-            background: #fdfdfd; 
-            padding: 40px;
+            padding: 40px 0; 
         }
-        .why-choose p { font-size: 20px; }
+        .why-choose p { font-size: 22px; }
         
         input { 
             width: 100%;
-            padding: 15px; 
+            padding: 18px; 
             margin-bottom: 20px; 
             border: 2px solid #000; 
             font-family: 'Georgia', serif; 
-            font-size: 18px;
+            font-size: 20px;
             box-sizing: border-box;
         }
 
@@ -119,11 +122,10 @@
             display: flex; 
             justify-content: space-between; 
             padding: 40px 0; 
-            border-top: 2px solid #000; 
-            font-size: 18px; 
+            border-top: 3px solid #000; 
+            font-size: 20px; 
         }
 
-        /* Мобильная версия */
         @media (max-width: 1024px) {
             .hero, .services, .info-contact { flex-direction: column; grid-template-columns: 1fr; gap: 40px; }
             h1 { font-size: 60px; }
@@ -135,7 +137,7 @@
 
     <div class="container">
         <header>
-            <div class="logo">А|Я</div>
+            <div class="logo">А/Я</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#firms">Law Firms</a></li>

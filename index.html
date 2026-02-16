@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bridging Language & Trust | Interpreter NYC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Прямые стили, чтобы точно всё применилось */
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+            color: #000;
+            line-height: 1.4;
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+        .logo { font-size: 36px; font-weight: bold; } /* РАМКИ НЕТ */
+        .nav-links { list-style: none; display: flex; gap: 20px; padding: 0; }
+        .nav-links a { text-decoration: none; color: #000; font-weight: bold; font-size: 16px; }
+        
+        /* ВСЕ ЗАГОЛОВКИ РУКОПИСНЫЕ */
+        h1, h2, h3 { font-family: 'Caveat', cursive; margin: 0; font-weight: 700; }
+        h1 { font-size: 56px; line-height: 1; }
+        h3 { font-size: 34px; margin-bottom: 10px; }
+
+        .hero { display: flex; gap: 30px; margin-bottom: 40px; align-items: center; }
+        .hero-content, .hero-image { flex: 1; }
+        .subtitle { font-size: 20px; margin: 10px 0 15px 0; font-style: italic; }
+        .hero-image img { width: 100%; height: 350px; object-fit: cover; border-radius: 4px; }
+
+        .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; }
+        .service-card { padding: 15px; border: 2px solid transparent; transition: 0.3s; }
+        .service-card:hover { border-color: #000; }
+
+        .btn {
+            padding: 8px 20px;
+            border: 2px solid #000;
+            text-decoration: none;
+            color: #000;
+            background: #fff;
+            font-weight: bold;
+            box-shadow: 4px 4px 0px #000;
+            display: inline-block;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+        }
+        .btn:hover { background: #000; color: #fff; box-shadow: none; }
+
+        .info-contact { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+        input { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #000; font-family: 'Georgia', serif; }
+        
+        footer { display: flex; justify-content: space-between; padding: 15px 0; border-top: 1px solid #000; font-size: 14px; }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">А/Я</div>
+            <div class="logo">А|Я</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#firms">Law Firms</a></li>
@@ -73,9 +126,7 @@
 
         <footer>
             <div><strong>Accurate. Confidential. Trusted.</strong></div>
-            <div>
-                interpretersofnyc@gmail.com | 917 699 0190 | @interpreternyc
-            </div>
+            <div>interpretersofnyc@gmail.com | 917 699 0190 | @interpreternyc</div>
         </footer>
     </div>
 </body>
